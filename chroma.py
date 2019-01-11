@@ -26,7 +26,7 @@ def text(color, text=''):
     cyan_bg    = "\e[46m" + text + "\x1b[39;49;00m"
     red_bg     = "\e[41m" + text + "\x1b[39;49;00m"
     magenta_bg = "\e[45m" + text + "\x1b[39;49;00m"
-	#-----------Add more colors below---------------#
+    #-----------Add more colors below---------------#
     # COLOR = "[  ANSI   ]+ text + "\x1b[39;49;00m"
 
     # Colored symbols
