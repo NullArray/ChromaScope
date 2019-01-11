@@ -54,7 +54,7 @@ def text(color, text=''):
     elif color == 'red_bg':
         return red_bg
     elif color == 'magenta_bg':
-        return magenta_bg    
+		return magenta_bg    
     
 	elif color == '+':
         return note
