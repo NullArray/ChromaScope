@@ -10,7 +10,7 @@ Whether you import the script as a library or not, it is very easy to use.
 # As library
 from chroma import text
 
-print text('green',"This line will not be printed green")
+print text('green',"This line will now be printed green")
 ```
 If you simply copy the script to your main python file all you need to do is invoke the function with 
 `print text('color','message')`
