@@ -18,24 +18,24 @@ def text(color, text=''):
     cyan    = "\x1b[33;36m" + text + "\x1b[39;49;00m"
     red     = "\x1b[31;01m" + text + "\x1b[39;49;00m"
     magenta = "\x1b[0;35m"  + text + "\x1b[39;49;00m"
-	#-----------Add more colors below---------------#
+    #-----------Add more colors below---------------#
     # COLOR = "  [  ANSI   ]  + text + "\x1b[39;49;00m"
 	
-	# Colored Background
-	green_bg   = "\e[42m" + text + "\x1b[39;49;00m"
+    # Colored Background
+    green_bg   = "\e[42m" + text + "\x1b[39;49;00m"
     cyan_bg    = "\e[46m" + text + "\x1b[39;49;00m"
     red_bg     = "\e[41m" + text + "\x1b[39;49;00m"
     magenta_bg = "\e[45m" + text + "\x1b[39;49;00m"
 	#-----------Add more colors below---------------#
     # COLOR = "[  ANSI   ]+ text + "\x1b[39;49;00m"
 
-	# Colored symbols
+    # Colored symbols
     note   = "\x1b[32;01m[+]\x1b[39;49;00m"
     info   = "\x1b[33;36m[i]\x1b[39;49;00m"
     warn   = "\x1b[31;01m[!]\x1b[39;49;00m"
     misc   = "\x1b[0;35m[~]\x1b[39;49;00m"
-	# Add more colored symbols below
-	# MSG  = "ANSICODE  [*] \x1b[39;49;00m"
+    # Add more colored symbols below
+    # MSG  = "ANSICODE  [*] \x1b[39;49;00m"
 
 
     if color == 'green':
@@ -45,18 +45,18 @@ def text(color, text=''):
     elif color == 'red':
         return red
     elif color == 'magenta':
-		return magenta
+        return magenta
     
-	elif color == 'green_bg':
+    elif color == 'green_bg':
         return green_bg
     elif color == 'cyan_bg':
         return cyan_bg
     elif color == 'red_bg':
         return red_bg
     elif color == 'magenta_bg':
-		return magenta_bg    
+	return magenta_bg    
     
-	elif color == '+':
+    elif color == '+':
         return note
     elif color == 'i':
         return info
@@ -64,5 +64,5 @@ def text(color, text=''):
         return warn
     elif color == '~':
         return misc
-	else:
-		raise BaseException(_ERROR_)
+    else:
+	raise BaseException(_ERROR_)
