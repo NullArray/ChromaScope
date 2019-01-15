@@ -2,7 +2,7 @@
 
 '''
 #--ANSI Colored Formatting--# 
-#--Mini Library by Vector --#
+#--Mini Lib by Vector/Null--#
 #--Licensed under GNU GPL3--#
 '''
 
@@ -19,14 +19,14 @@ def text(color, text=''):
     red     = "\x1b[31;01m" + text + "\x1b[39;49;00m"
     magenta = "\x1b[0;35m"  + text + "\x1b[39;49;00m"
     #-----------Add more colors below---------------#
-    # COLOR = "  [  ANSI   ]  + text + "\x1b[39;49;00m"
+    # COLOR = "  [  ANSI   ]+ text + "\x1b[39;49;00m"
 	
     # Colored Background
     green_bg   = "\e[42m" + text + "\x1b[39;49;00m"
     cyan_bg    = "\e[46m" + text + "\x1b[39;49;00m"
     red_bg     = "\e[41m" + text + "\x1b[39;49;00m"
     magenta_bg = "\e[45m" + text + "\x1b[39;49;00m"
-    #-----------Add more colors below---------------#
+    #-----------Add more colors below-------------#
     # COLOR = "[  ANSI   ]+ text + "\x1b[39;49;00m"
 
     # Colored symbols
